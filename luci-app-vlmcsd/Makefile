@@ -8,7 +8,12 @@ include $(TOPDIR)/rules.mk
 
 LUCI_TITLE:=LuCI support for Vlmcsd KMS Server
 LUCI_DEPENDS:=+vlmcsd
+LUCI_PKGARCH:=all
 
-include ../../luci.mk
+PKG_NAME:=luci-app-vlmcsd
+PKG_VERSION:=1.0
+PKG_RELEASE:=6
+
+include $(TOPDIR)/feeds/luci/luci.mk
 
 # call BuildPackage - OpenWrt buildroot signature
