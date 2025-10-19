@@ -8,6 +8,6 @@ include $(TOPDIR)/rules.mk
 LUCI_TITLE:=LuCI support for netdata
 LUCI_DEPENDS:=+luci-compat +netdata
 
-include ../../luci.mk
+include $(TOPDIR)/feeds/luci/luci.mk
 
 # call BuildPackage - OpenWrt buildroot signature
